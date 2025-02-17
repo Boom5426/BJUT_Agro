@@ -32,12 +32,12 @@ parser.add_argument("--data_path", type=str, default='datasets/BJUT_all.npy')
 
 parser.add_argument("--document", type=str, default='1_10')
 parser.add_argument("--device", type=str, default='cuda:0')
-parser.add_argument("--batch_size", type=int, default=1000)  # 2048
+parser.add_argument("--batch_size", type=int, default=1024)  # 2048
 parser.add_argument("--hidden_size", type=int, default=512)  # 512
-parser.add_argument("--epoch", type=int, default=200)
-parser.add_argument("--diffusion_step", type=int, default=10)
+parser.add_argument("--epoch", type=int, default=1000)
+parser.add_argument("--diffusion_step", type=int, default=1000)
 parser.add_argument("--learning_rate", type=float, default=1e-4)  # 太高了容易梯度爆炸
-parser.add_argument("--depth", type=int, default=2)
+parser.add_argument("--depth", type=int, default=12)
 parser.add_argument("--noise_std", type=float, default=10)
 parser.add_argument("--pca_dim", type=int, default=100)
 parser.add_argument("--head", type=int, default=16)
